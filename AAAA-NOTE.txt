@@ -1,0 +1,13 @@
+* creare file sql dai log di creazione tabelle e prodotti di JPA hibernate
+* settare variabili ambientali in file .env - inserirle nel docker-compose
+* ricordarsi di utilizzare porte nuove: 
+
+` networks:
+  mynetwork:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.22.0.0/16" # cambia se in conflitto
+          gateway: "172.22.0.1" # cambia se in conflitto
+`
